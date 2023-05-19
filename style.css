@@ -1,0 +1,31 @@
+:root {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+	color: #eee;
+	background-color: #111;
+	overscroll-behavior: contain;
+}
+
+canvas {
+	image-rendering: pixelated;
+}
+
+@media (orientation:portrait) {
+	canvas {
+		width: 100%;
+	}
+}
+
+@media (orientation:landscape) {
+	canvas {
+		height: 100%;
+	}
+}
